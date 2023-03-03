@@ -39,12 +39,12 @@ export default function Navbar(props) {
               </li>
             </ul>
           </div>
-          <div className="bg-black rounded mx-2" onClick={props.toggle} style={{height: '25px', width: "25px",cursor: "pointer"}}></div>
-          <div className="bg-primary rounded mx-2" style={{height: '25px', width: "25px",cursor: "pointer"}}></div>
-          <div className="bg-success rounded mx-2" style={{height: '25px', width: "25px",cursor: "pointer"}}></div>
-          <div className="bg-danger rounded mx-2" style={{height: '25px', width: "25px",cursor: "pointer"}}></div>
-          <div className="bg-warning rounded mx-2" style={{height: '25px', width: "25px",cursor: "pointer"}}></div>
-          <div className="bg-light rounded mx-2" style={{height: '25px', width: "25px",cursor: "pointer"}}></div>
+          <div className="bg-black rounded mx-2" onClick={()=>props.toggle("dark")} style={{height: '25px', width: "25px",cursor: "pointer" , borderColor:"black" }}></div>
+          <div className="bg-primary rounded mx-2"  onClick={()=>props.toggle("primary")} style={{height: '25px', width: "25px",cursor: "pointer"}}></div>
+          <div className="bg-success rounded mx-2"  onClick={()=>props.toggle("success")} style={{height: '25px', width: "25px",cursor: "pointer"}}></div>
+          <div className="bg-danger rounded mx-2"  onClick={()=>props.toggle("danger")} style={{height: '25px', width: "25px",cursor: "pointer"}}></div>
+          <div className="bg-warning rounded mx-2"  onClick={()=>props.toggle("warning")} style={{height: '25px', width: "25px",cursor: "pointer"}}></div>
+          <div className="bg-light rounded mx-2"  onClick={()=>props.toggle("light")} style={{height: '25px', width: "25px",cursor: "pointer"}}></div>
 
         </div>
       </nav>

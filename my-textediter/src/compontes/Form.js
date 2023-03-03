@@ -53,7 +53,7 @@ const [textArea , settextArea] = useState("");
             Email address
           </label>
           <input
-             style={{backgroundColor:props.change === "light"? "white" : "black", color: "white"}}
+             style={{backgroundColor:props.change === "light"? "white" : "gray", color:props.change === "light"? "black" : "white"}}
             type="email"
             className="form-control"
             id="exampleFormControlInput1"
@@ -65,11 +65,13 @@ const [textArea , settextArea] = useState("");
         <button type="button" className="btn btn-primary"style={{ marginBottom: "1rem"}}>Log in</button>
 
           <textarea
-             style={{backgroundColor: "#5c4a4a", color: "white"}}
+            
             className="form-control"
             id="exampleFormControlTextarea1"
             rows="6"
             onChange={handleOnchange}
+            style={{backgroundColor:props.change === "dark"? "dark" : "gray", color:props.change === "light"? "black" : "white"}}
+
            
             value={textArea}
           ></textarea>
