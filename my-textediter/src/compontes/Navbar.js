@@ -1,9 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 
 export default function Navbar(props) {
+  
+
   return (
     <div>
-      <nav className="navbar navbar-expand-lg bg-body-tertiary">
+      <nav className={` navbar navbar-expand-lg navbar-${props.change} bg-${props.change} `} >
         <div className="container-fluid">
           <a className="navbar-brand" href="/">
             {props.title}
@@ -37,6 +39,13 @@ export default function Navbar(props) {
               </li>
             </ul>
           </div>
+          <div className="bg-black rounded mx-2" onClick={props.toggle} style={{height: '25px', width: "25px",cursor: "pointer"}}></div>
+          <div className="bg-primary rounded mx-2" style={{height: '25px', width: "25px",cursor: "pointer"}}></div>
+          <div className="bg-success rounded mx-2" style={{height: '25px', width: "25px",cursor: "pointer"}}></div>
+          <div className="bg-danger rounded mx-2" style={{height: '25px', width: "25px",cursor: "pointer"}}></div>
+          <div className="bg-warning rounded mx-2" style={{height: '25px', width: "25px",cursor: "pointer"}}></div>
+          <div className="bg-light rounded mx-2" style={{height: '25px', width: "25px",cursor: "pointer"}}></div>
+
         </div>
       </nav>
     </div>
