@@ -8,9 +8,10 @@ function App() {
   const [change, setchange] = useState("light");
   const toggle = (cls)=>{
     removeclass();
+    let csl = cls
     if(change === "light")
  {  
-   setchange("dark")  
+   setchange("black")  
    document.body.style.backgroundColor= "gray";
    document.body.classList.add('bg-'+cls);
    console.log(cls);
@@ -18,12 +19,10 @@ function App() {
    console.log("toggle mode clicked on click if condcito")
   }
    else{
-    setchange("dark")
+    setchange("dark  ")
     document.body.classList.add('bg-'+cls);
-
-    document.body.style.backgroundColor= "white";
+    // document.body.style.backgroundColor= "white";
     console.log("toggle else part run")
-
    }
    }
   
@@ -38,7 +37,7 @@ function App() {
   return (
   <div >
   <Navbar title={"TextEdit"} toggle={toggle} change={change}/>
-  <Form change={change} />
+  <Form change={change}  />
   </div>
   );
 }

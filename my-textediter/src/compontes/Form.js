@@ -41,12 +41,12 @@ const [textArea , settextArea] = useState("");
    let lengthoOfWordCount = textArea.split(" ").length;
    let lengthwordzero = (lengthoOfWordCount === 1 ? "0" : lengthoOfWordCount)
 
-
+    
 
   return (
     <>
-   
-      <div className="container" style={{color: props.change === "light" ? "black" : "white"  }}
+     
+      <div className="container" style={{color: props.change === "light" ? "black" : "white" ,color: props.change === "black" ?"white" : "black" }}
        >
         <div className=" mb-3">
           <label htmlFor="exampleFormControlInput1" className="form-label" >
@@ -70,7 +70,7 @@ const [textArea , settextArea] = useState("");
             id="exampleFormControlTextarea1"
             rows="6"
             onChange={handleOnchange}
-            style={{backgroundColor:props.change === "dark"? "dark" : "gray", color:props.change === "light"? "black" : "white"}}
+            style={{backgroundColor:props.change === "light"? "light" : "gray", color:props.change === "light"? "black" : "white",}}
 
            
             value={textArea}
