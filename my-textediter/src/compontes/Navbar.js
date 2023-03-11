@@ -45,6 +45,7 @@ export default function Navbar(props) {
           <div className="bg-danger rounded mx-2"  onClick={()=>props.toggle("danger")} style={{height: '25px', width: "25px",cursor: "pointer"}}></div>
           <div className="bg-warning rounded mx-2"  onClick={()=>props.toggle("warning")} style={{height: '25px', width: "25px",cursor: "pointer"}}></div>
           <div className="bg-light rounded mx-2"  onClick={()=>props.toggle("light")} style={{height: '25px', width: "25px",cursor: "pointer"}}></div>
+          <div className="bg-light rounded mx-2"  onClick={()=>props.toggle("info")} style={{height: '25px', width: "25px",cursor: "pointer"}}></div>
 
         </div>
       </nav>
