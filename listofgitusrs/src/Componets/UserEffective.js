@@ -1,10 +1,19 @@
-import React from "react";
+import React, { useEffectfun } from "react";
 
-function UserEffective() {
+function UserEffective  ()  {
+  const getUser = async() =>{
+    const response = fetch('https://dummyjson.com/products')
+    console.log(response);
+  }
+    useEffectfun( () =>{
+    getUser();
+  });
   return (
+    <>
     <div className="container">
       <h2>list of git users</h2>
       <div className="row row-cols-1 row-cols-md-3 g-4">
+       
         <div className="card" >
           <img src="..." className="card-img-top" alt="..." />
           <div className="card-body">
@@ -30,6 +39,7 @@ function UserEffective() {
         </div>
       </div>
     </div>
+    </>
   );
 }
 
